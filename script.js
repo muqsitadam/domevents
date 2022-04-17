@@ -11,6 +11,23 @@ function createListElement() {
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
+
+//Adding delete button to list item
+	var deleteButton = document.createElement("button");
+	deleteButton.appendChild(document.createTextNode("Delete"))
+	li.appendChild(deleteButton)
+
+//Delete list item when delete button is clicked
+	deleteButton.onclick=function(event){
+		var target=event.target;
+		target.parentNode.remove();
+	}
+
+//Toggling the class "done" to strikethrough done items
+	ul.onclick=function(event){
+		var target=event.target;
+		target.classList.toggle("done");
+	}
 }
 
 function addListAfterClick() {
@@ -29,32 +46,4 @@ button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
 
-
-ul.onclick=function(event){
-	var target=event.target;
-	target.classList.toggle("done");
-}
-
-
-// var doneClass = document.getElementsByTagName('li')
-// console.log(doneClass);
-// var listItems = [...doneClass]
-// console.log(listItems);
-
-var body = document.querySelector('body');
-
- body.on= function(event) {
-if( event.target.getElementsByTagName('li') ) {
-
-    // add delete button
-    const buttonElem = document.createElement('button');
-    buttonElem.innerText = 'delete';
-    buttonElem.onclick = function() { // remove list item here
-        this.parentElement.remove()
-    };
-    event.target.appendChild(buttonElem);
-} else {
-    // remove the delete button
-    event.target.getElementByTagName('button').remove();
-}}
 
