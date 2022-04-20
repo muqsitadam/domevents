@@ -15,6 +15,7 @@ function createListElement() {
 //Adding delete button to list item
 	var deleteButton = document.createElement("button");
 	deleteButton.appendChild(document.createTextNode("Delete"))
+	deleteButton.setAttribute('class', 'delete')
 	li.appendChild(deleteButton)
 
 //Delete list item when delete button is clicked
