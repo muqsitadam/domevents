@@ -1,9 +1,8 @@
 .coolTitle {
-  text-align: center;
+  align-content: center;
   font-family: 'Oswald', Helvetica, sans-serif;
-  /* font-size: 40px; */
   color: tomato;
-  margin: 0, auto;
+  margin: auto;
 }
 
 .done {
@@ -12,10 +11,15 @@
 
 .listitems{
   text-align: start;
-  width: 50%;
+}
+
+li{
+  font-size: 1.2em;
+  margin: 5px 5px 5px 5px;
 }
 
 .delete{
   padding: 3px;
   border-radius: 5px;
+  margin-left: 2em;
 }
