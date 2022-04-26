@@ -1,5 +1,5 @@
 .body {
-  align-content: center;
+  text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
   color: tomato;
   margin: auto;
@@ -20,6 +20,17 @@ li{
 
 .delete{
   padding: 3px;
+  border: 1px solid tomato;
   border-radius: 5px;
   margin-left: 2em;
+  background-color: tomato;
+  color: white;
+}
+
+#enter{
+  background-color: tomato;
+  color: white;
+  padding: 7px;
+  border: 1px solid tomato;
+  border-radius: 10px;
 }
