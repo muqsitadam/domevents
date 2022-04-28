@@ -2,11 +2,17 @@
   text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
   color: tomato;
+  background-color: antiquewhite;
   margin: auto;
 }
 
 .done {
   text-decoration: line-through;
+}
+
+#userinput{
+  border-radius: 3px;
+  height: 20px;
 }
 
 .listitems{
